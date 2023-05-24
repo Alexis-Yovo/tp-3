@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, blue, red);
+  background-attachment: fixed;
+  font-family: "Wix Madefor Display", sans-serif;
+  color: aliceblue;
+}
+.nav {
+  background-color: red;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  margin: 10px auto;
+  border-radius: 1rem;
+}
+.grid > article img {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+.text {
+  padding: 0 20px 20px;
+  text-align: center;
+  padding: 5% 7% 7% 5%;
+}
+.text > .button {
+  background-color: gray;
+  border: 0;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button:hover {
+  background-color: black;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  background-color: darkblue;
+  justify-content: space-around;
+}
+article:hover {
+  transform: translateY(-10px);
+  background-color: orangered;
+}
+@media screen and (min-width: 476px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

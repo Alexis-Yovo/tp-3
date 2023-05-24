@@ -1,0 +1,43 @@
+body {
+  background-image: url("https://images7.alphacoders.com/108/1087509.jpg");
+  background-attachment: fixed;
+  font-family: "Wix Madefor Display", sans-serif;
+  color: aliceblue;
+}
+
+.title {
+  text-align: center;
+}
+.nav {
+  background-color: red;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  background-color: darkblue;
+  justify-content: space-around;
+}
+
+#text {
+  border: 2px solid red;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: space-between;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.submit {
+  margin-left: 25%;
+  margin-bottom: 2em;
+}
